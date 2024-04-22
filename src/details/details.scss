@@ -1,0 +1,8 @@
+@import '../CV/variables';
+
+.cv-details {
+    padding: $main-gap;
+    grid-area: details;
+    text-align: center;
+    background-color: #fafafa;
+}

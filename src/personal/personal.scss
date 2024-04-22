@@ -1,0 +1,16 @@
+@import '../CV/variables';
+
+.cv-personal {
+    padding: $main-gap;
+    background-color: #eee;
+    grid-area: personal;
+    max-width: 400px;
+    text-align: center;
+    width: 100%;
+
+    .cv-photo{
+        width: 100%;
+        margin: $main-gap 0;
+        border-radius: 50%;
+    }
+}
