@@ -1,11 +1,11 @@
 import './personal.scss'
 import { CVPersonal } from '../types'
 
-type Props = {
+type PersonalProps = {
     data: CVPersonal;
 }
 
-const Personal = ({data: {photo, name, surname, position}}: Props) => {
+export const Personal = ({data: {photo, name, surname, position}}: PersonalProps) => {
     return (
         <aside className='cv-personal'>
             <h2>Personal Data</h2>
@@ -15,5 +15,3 @@ const Personal = ({data: {photo, name, surname, position}}: Props) => {
         </aside>
     )
 }
-
-export { Personal }

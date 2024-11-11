@@ -1,38 +1,21 @@
+/* eslint-disable react-refresh/only-export-components */
 import { Header } from '../header';
 import { Details } from '../details';
 import { Personal } from '../personal';
 
+// styles
 import './cv.scss';
 
-import { CVData } from '../types'
+// importing data
+import { cvData } from './cvData'
 
-const CV = () => {
-      
-    const cvData: CVData = {
-        personal: {
-            photo: 'https://placehold.co/400x400?text=KP',
-            name: 'Kamil',
-            surname: 'Parylak',
-            position: 'Developer'
-        },
-        details: {
-            experience: [
-                {year: 2020, description: 'Lorem Ipsum'},
-                {year: 2023, description: 'Dolor Sit Amen'},
-            ],
-            education: [
-                'Lorem ipsum',
-                'Dolor Sit Amet',
-                'Diable rogi są ostre'
-            ]
-        }
-    }
+export const CV = () => {
+
+    const {details, personal} = cvData;
 
     return <main className='cv-main'>
-        <Header data={cvData.personal}/>
-        <Personal data={cvData.personal}/>
-        <Details data={cvData.details}/>
+        <Header data={personal}/>
+        <Personal data={personal}/>
+        <Details data={details}/>
     </main>
 }
-
-export { CV }

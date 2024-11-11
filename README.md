@@ -13,4 +13,4 @@ Założenia:
 - w funkcji render należy zwrócić strukturę reprezentującą CV układ dowolny z zachowaniem ogólnych zasad - dwie kolumny:
   - [x] lewa - zdjęcie, imię nazwisko, stanowisko
   - [x] prawa - doświadczenie, potem edukacja
-- [ ] ostylować Sassem lub CSSem wg własnego uznania
+- [x] ostylować Sassem lub CSSem wg własnego uznania

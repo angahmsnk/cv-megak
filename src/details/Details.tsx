@@ -2,11 +2,11 @@ import './details.scss'
 
 import { CVDetails } from '../types'
 
-type Props = {
+type DetailsProps = {
   data: CVDetails;
 }
 
-const Details = ({data: {experience, education}}: Props) => {
+export const Details = ({data: {experience, education}}: DetailsProps) => {
   return (
     <section className='cv-details'>
       <h2>Experience</h2>
@@ -22,7 +22,5 @@ const Details = ({data: {experience, education}}: Props) => {
         { education.map((education, index) => <li key={index}>{education}</li>) }
       </ul>
     </section>
-  )
+)
 }
-
-export { Details }
